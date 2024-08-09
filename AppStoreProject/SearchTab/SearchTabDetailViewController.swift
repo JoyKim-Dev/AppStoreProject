@@ -117,7 +117,7 @@ extension SearchTabDetailViewController {
             make.top.equalTo(collectionView.snp.bottom).offset(20)
             make.horizontalEdges.equalTo(contentView.safeAreaLayoutGuide).inset(10)
             make.bottom.equalTo(contentView)
-            make.height.lessThanOrEqualTo(500)
+            make.height.lessThanOrEqualTo(2000)
         }
     }
     
@@ -203,7 +203,7 @@ extension SearchTabDetailViewController {
                       let size = CGSize(width: owner.descriptionView.frame.width, height: .infinity)
                       let estimatedSize = owner.descriptionView.sizeThatFits(size)
                       print("텍스트뷰사이즈======",estimatedSize)
-                      let isMaxHeight = estimatedSize.height >= 520
+                      let isMaxHeight = estimatedSize.height >= 2020
                       guard isMaxHeight != owner.descriptionView.isScrollEnabled else { return }
                       owner.descriptionView.isScrollEnabled = isMaxHeight
                       owner.descriptionView.reloadInputViews()

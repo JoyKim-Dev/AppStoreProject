@@ -5,6 +5,8 @@
 //  Created by Joy Kim on 8/8/24.
 //
 
+// MARK: - Todo: tableView 선택 효과 없애기, network 통신 pagination, 최근검색어 저장, Realm...
+
 import Foundation
 import RxSwift
 
