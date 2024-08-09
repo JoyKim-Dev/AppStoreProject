@@ -16,10 +16,12 @@ final class SearchTabMainViewModel {
     struct Input {
         let searchBtnTap: ControlEvent<Void>
         let searchQuery: BehaviorSubject<String>
+        let itemSelected: ControlEvent<IndexPath>
     }
     
     struct Output {
         let appList: Observable<[Results]>
+        let selectedItem: Observable<Results>
     }
     
     func transform(input: Input) -> Output {
@@ -48,9 +50,9 @@ final class SearchTabMainViewModel {
             }
             .disposed(by: disposeBag)
         
-
+        let selectedItem = input.itemSelected.withLatestFrom(appList) {$1[$0.row]}
         
-        return Output(appList: appList)
+        return Output(appList: appList, selectedItem: selectedItem)
     }
     
 }

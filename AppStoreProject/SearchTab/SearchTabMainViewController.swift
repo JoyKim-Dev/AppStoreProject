@@ -70,7 +70,7 @@ extension SearchTabMainViewController {
                     owner.navigationItem.title = "검색"
                     owner.tableView.isHidden = true
                 } else {
-                    owner.navigationItem.title = ""
+                   // owner.navigationItem.title = ""
                     owner.navigationController?.navigationBar.prefersLargeTitles = false
                     owner.navigationItem.titleView = owner.searchBar
                     owner.tableView.isHidden = false
@@ -107,7 +107,7 @@ extension SearchTabMainViewController {
                }
                .disposed(by: disposeBag)
         
-        let input = SearchTabMainViewModel.Input(searchBtnTap: searchBar.rx.searchButtonClicked, searchQuery: searchQuery)
+        let input = SearchTabMainViewModel.Input(searchBtnTap: searchBar.rx.searchButtonClicked, searchQuery: searchQuery, itemSelected: tableView.rx.itemSelected)
         
         let output = viewModel.transform(input: input)
         
@@ -116,5 +116,14 @@ extension SearchTabMainViewController {
             cell.configUI(data: element)
         }
         .disposed(by: disposeBag)
+        
+        
+        output.selectedItem
+            .subscribe(with: self) { owner, value in
+                let vc = SearchTabDetailViewController()
+                vc.appDataFromPreviousPage = value
+                owner.navigationController?.pushViewController(vc, animated: false)
+            }
+            .disposed(by: disposeBag)
     }
 }
