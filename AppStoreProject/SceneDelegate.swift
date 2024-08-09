@@ -17,9 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
         // 띄워줄 화면 VC명 할당
-        let vc = SearchTabMainViewController()
+        let vc = TabController()
         // 루트뷰 설정 (스토리보드의 entry point 역할을 함)
-        window?.rootViewController = UINavigationController(rootViewController: vc)
+        window?.rootViewController = vc
         // 사용자에게 화면이 보여지도록 설정. 없어도 실행되긴 하는데 애플 권장사항임.
         window?.makeKeyAndVisible()
     }

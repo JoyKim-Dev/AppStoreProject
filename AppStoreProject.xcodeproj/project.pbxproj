@@ -11,7 +11,7 @@
 		352942482C6511C0000E6AF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942472C6511C0000E6AF4 /* SceneDelegate.swift */; };
 		3529424F2C6511C1000E6AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3529424E2C6511C1000E6AF4 /* Assets.xcassets */; };
 		352942522C6511C1000E6AF4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 352942512C6511C1000E6AF4 /* Base */; };
-		3529425B2C65124A000E6AF4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529425A2C65124A000E6AF4 /* TabBarController.swift */; };
+		3529425B2C65124A000E6AF4 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529425A2C65124A000E6AF4 /* TabController.swift */; };
 		3529425D2C651288000E6AF4 /* SearchTabMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529425C2C651288000E6AF4 /* SearchTabMainViewController.swift */; };
 		3529425F2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529425E2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift */; };
 		352942612C6512AE000E6AF4 /* SearchTabDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942602C6512AE000E6AF4 /* SearchTabDetailViewController.swift */; };
@@ -21,6 +21,15 @@
 		352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942682C65136F000E6AF4 /* iTunesModel.swift */; };
 		3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */; };
 		3529426D2C65139F000E6AF4 /* SearchTabDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */; };
+		3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97D2C65A2F300D0D6C6 /* RxCocoa */; };
+		3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97F2C65A2F300D0D6C6 /* RxSwift */; };
+		3595D9832C65A30400D0D6C6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D9822C65A30400D0D6C6 /* SnapKit */; };
+		3595D9862C65A35100D0D6C6 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D9852C65A35100D0D6C6 /* Toast */; };
+		3595D9892C65A36400D0D6C6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D9882C65A36400D0D6C6 /* Kingfisher */; };
+		3595D98B2C66187900D0D6C6 /* secondTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D98A2C66187900D0D6C6 /* secondTabVC.swift */; };
+		3595D98D2C6618CC00D0D6C6 /* thirdTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */; };
+		3595D98F2C6618F200D0D6C6 /* fourthTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */; };
+		3595D9912C66191200D0D6C6 /* fifthTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595D9902C66191200D0D6C6 /* fifthTabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +39,7 @@
 		3529424E2C6511C1000E6AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352942512C6511C1000E6AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352942532C6511C1000E6AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3529425A2C65124A000E6AF4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3529425A2C65124A000E6AF4 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		3529425C2C651288000E6AF4 /* SearchTabMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabMainViewController.swift; sourceTree = "<group>"; };
 		3529425E2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabMainTableViewCell.swift; sourceTree = "<group>"; };
 		352942602C6512AE000E6AF4 /* SearchTabDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabDetailViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +49,10 @@
 		352942682C65136F000E6AF4 /* iTunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesModel.swift; sourceTree = "<group>"; };
 		3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabMainViewModel.swift; sourceTree = "<group>"; };
 		3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabDetailViewModel.swift; sourceTree = "<group>"; };
+		3595D98A2C66187900D0D6C6 /* secondTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTabVC.swift; sourceTree = "<group>"; };
+		3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTabVC.swift; sourceTree = "<group>"; };
+		3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthTabVC.swift; sourceTree = "<group>"; };
+		3595D9902C66191200D0D6C6 /* fifthTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthTabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3595D9862C65A35100D0D6C6 /* Toast in Frameworks */,
+				3595D9832C65A30400D0D6C6 /* SnapKit in Frameworks */,
+				3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */,
+				3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */,
+				3595D9892C65A36400D0D6C6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +90,17 @@
 		352942442C6511C0000E6AF4 /* AppStoreProject */ = {
 			isa = PBXGroup;
 			children = (
-				3529425A2C65124A000E6AF4 /* TabBarController.swift */,
+				3529425A2C65124A000E6AF4 /* TabController.swift */,
 				352942592C651207000E6AF4 /* SearchTab */,
-				352942452C6511C0000E6AF4 /* AppDelegate.swift */,
-				352942472C6511C0000E6AF4 /* SceneDelegate.swift */,
 				3529424E2C6511C1000E6AF4 /* Assets.xcassets */,
 				352942502C6511C1000E6AF4 /* LaunchScreen.storyboard */,
+				352942472C6511C0000E6AF4 /* SceneDelegate.swift */,
+				352942452C6511C0000E6AF4 /* AppDelegate.swift */,
+				3595D98A2C66187900D0D6C6 /* secondTabVC.swift */,
+				3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */,
+				3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */,
 				352942532C6511C1000E6AF4 /* Info.plist */,
+				3595D9902C66191200D0D6C6 /* fifthTabVC.swift */,
 			);
 			path = AppStoreProject;
 			sourceTree = "<group>";
@@ -115,6 +137,13 @@
 			dependencies = (
 			);
 			name = AppStoreProject;
+			packageProductDependencies = (
+				3595D97D2C65A2F300D0D6C6 /* RxCocoa */,
+				3595D97F2C65A2F300D0D6C6 /* RxSwift */,
+				3595D9822C65A30400D0D6C6 /* SnapKit */,
+				3595D9852C65A35100D0D6C6 /* Toast */,
+				3595D9882C65A36400D0D6C6 /* Kingfisher */,
+			);
 			productName = AppStoreProject;
 			productReference = 352942422C6511C0000E6AF4 /* AppStoreProject.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +172,12 @@
 				Base,
 			);
 			mainGroup = 352942392C6511C0000E6AF4;
+			packageReferences = (
+				3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				3595D9812C65A30400D0D6C6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3595D9842C65A35100D0D6C6 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				3595D9872C65A36400D0D6C6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 352942432C6511C0000E6AF4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3595D98D2C6618CC00D0D6C6 /* thirdTabVC.swift in Sources */,
 				352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */,
 				3529425F2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift in Sources */,
 				352942632C6512E9000E6AF4 /* SearchTabMainCollectionViewCell.swift in Sources */,
@@ -176,11 +212,14 @@
 				3529425D2C651288000E6AF4 /* SearchTabMainViewController.swift in Sources */,
 				3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */,
 				3529426D2C65139F000E6AF4 /* SearchTabDetailViewModel.swift in Sources */,
-				3529425B2C65124A000E6AF4 /* TabBarController.swift in Sources */,
+				3529425B2C65124A000E6AF4 /* TabController.swift in Sources */,
+				3595D98B2C66187900D0D6C6 /* secondTabVC.swift in Sources */,
 				352942462C6511C0000E6AF4 /* AppDelegate.swift in Sources */,
 				352942482C6511C0000E6AF4 /* SceneDelegate.swift in Sources */,
+				3595D9912C66191200D0D6C6 /* fifthTabVC.swift in Sources */,
 				352942652C651312000E6AF4 /* SearchTabDetailCollectionViewCell.swift in Sources */,
 				352942612C6512AE000E6AF4 /* SearchTabDetailViewController.swift in Sources */,
+				3595D98F2C6618F200D0D6C6 /* fourthTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +446,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		3595D9812C65A30400D0D6C6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		3595D9842C65A35100D0D6C6 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		3595D9872C65A36400D0D6C6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3595D97D2C65A2F300D0D6C6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		3595D97F2C65A2F300D0D6C6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		3595D9822C65A30400D0D6C6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3595D9812C65A30400D0D6C6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3595D9852C65A35100D0D6C6 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3595D9842C65A35100D0D6C6 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		3595D9882C65A36400D0D6C6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3595D9872C65A36400D0D6C6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3529423A2C6511C0000E6AF4 /* Project object */;
 }
