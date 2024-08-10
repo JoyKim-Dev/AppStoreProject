@@ -21,6 +21,7 @@
 		352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942682C65136F000E6AF4 /* iTunesModel.swift */; };
 		3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */; };
 		3529426D2C65139F000E6AF4 /* SearchTabDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */; };
+		358C144A2C67C2B500E63FE2 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */; };
 		3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97D2C65A2F300D0D6C6 /* RxCocoa */; };
 		3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97F2C65A2F300D0D6C6 /* RxSwift */; };
 		3595D9832C65A30400D0D6C6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D9822C65A30400D0D6C6 /* SnapKit */; };
@@ -49,6 +50,7 @@
 		352942682C65136F000E6AF4 /* iTunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesModel.swift; sourceTree = "<group>"; };
 		3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabMainViewModel.swift; sourceTree = "<group>"; };
 		3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabDetailViewModel.swift; sourceTree = "<group>"; };
+		358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		3595D98A2C66187900D0D6C6 /* secondTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTabVC.swift; sourceTree = "<group>"; };
 		3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTabVC.swift; sourceTree = "<group>"; };
 		3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthTabVC.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3529425A2C65124A000E6AF4 /* TabController.swift */,
+				358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */,
 				352942592C651207000E6AF4 /* SearchTab */,
 				3529424E2C6511C1000E6AF4 /* Assets.xcassets */,
 				352942502C6511C1000E6AF4 /* LaunchScreen.storyboard */,
@@ -99,8 +102,8 @@
 				3595D98A2C66187900D0D6C6 /* secondTabVC.swift */,
 				3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */,
 				3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */,
-				352942532C6511C1000E6AF4 /* Info.plist */,
 				3595D9902C66191200D0D6C6 /* fifthTabVC.swift */,
+				352942532C6511C1000E6AF4 /* Info.plist */,
 			);
 			path = AppStoreProject;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				3595D98D2C6618CC00D0D6C6 /* thirdTabVC.swift in Sources */,
 				352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */,
+				358C144A2C67C2B500E63FE2 /* UserDefaultsManager.swift in Sources */,
 				3529425F2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift in Sources */,
 				352942632C6512E9000E6AF4 /* SearchTabMainCollectionViewCell.swift in Sources */,
 				352942672C651321000E6AF4 /* NetworkManager.swift in Sources */,
