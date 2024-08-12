@@ -21,6 +21,7 @@
 		352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942682C65136F000E6AF4 /* iTunesModel.swift */; };
 		3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */; };
 		352D9DED2C6A540600028F14 /* BaseViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D9DEC2C6A540600028F14 /* BaseViewModel+Protocol.swift */; };
+		352D9DF02C6A554800028F14 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 352D9DEF2C6A554800028F14 /* Alamofire */; };
 		358C144A2C67C2B500E63FE2 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */; };
 		3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97D2C65A2F300D0D6C6 /* RxCocoa */; };
 		3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97F2C65A2F300D0D6C6 /* RxSwift */; };
@@ -65,6 +66,7 @@
 				3595D9862C65A35100D0D6C6 /* Toast in Frameworks */,
 				3595D9832C65A30400D0D6C6 /* SnapKit in Frameworks */,
 				3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */,
+				352D9DF02C6A554800028F14 /* Alamofire in Frameworks */,
 				3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */,
 				3595D9892C65A36400D0D6C6 /* Kingfisher in Frameworks */,
 			);
@@ -146,6 +148,7 @@
 				3595D9822C65A30400D0D6C6 /* SnapKit */,
 				3595D9852C65A35100D0D6C6 /* Toast */,
 				3595D9882C65A36400D0D6C6 /* Kingfisher */,
+				352D9DEF2C6A554800028F14 /* Alamofire */,
 			);
 			productName = AppStoreProject;
 			productReference = 352942422C6511C0000E6AF4 /* AppStoreProject.app */;
@@ -180,6 +183,7 @@
 				3595D9812C65A30400D0D6C6 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3595D9842C65A35100D0D6C6 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				3595D9872C65A36400D0D6C6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				352D9DEE2C6A554800028F14 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 352942432C6511C0000E6AF4 /* Products */;
 			projectDirPath = "";
@@ -452,6 +456,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		352D9DEE2C6A554800028F14 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 		3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -487,6 +499,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		352D9DEF2C6A554800028F14 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 352D9DEE2C6A554800028F14 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		3595D97D2C65A2F300D0D6C6 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3595D97C2C65A2F300D0D6C6 /* XCRemoteSwiftPackageReference "RxSwift" */;

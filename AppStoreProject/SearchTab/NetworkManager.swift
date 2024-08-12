@@ -9,6 +9,7 @@
 
 import Foundation
 import RxSwift
+import Alamofire
 
 enum APIError: Error {
     case invalidURL
@@ -21,6 +22,23 @@ final class NetworkManager {
     
     static let shared = NetworkManager()
     private init() {}
+    
+    func callAppSearchWithSingle(query: String) -> Single<Application> {
+        let urlString = "https://itunes.apple.com/search?term=\(query)&country=KR&media=software"
+        return Single.create { observer -> Disposable in
+            AF.request(urlString)
+                .validate(statusCode: 200..<300)
+                .responseDecodable(of: Application.self) { response in
+                    switch response.result {
+                    case.success(let success):
+                        observer(.success(success))
+                    case.failure(let error):
+                        observer(.failure(error))
+                    }
+                }
+            return Disposables.create()
+        }.debug("Single 통신")
+    }
     
     func callAppSearch(query: String) -> Observable<Application> {
         let urlString = "https://itunes.apple.com/search?term=\(query)&country=KR&media=software"
