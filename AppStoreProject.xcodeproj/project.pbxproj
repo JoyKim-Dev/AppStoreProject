@@ -20,7 +20,7 @@
 		352942672C651321000E6AF4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942662C651321000E6AF4 /* NetworkManager.swift */; };
 		352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352942682C65136F000E6AF4 /* iTunesModel.swift */; };
 		3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */; };
-		3529426D2C65139F000E6AF4 /* SearchTabDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */; };
+		352D9DED2C6A540600028F14 /* BaseViewModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D9DEC2C6A540600028F14 /* BaseViewModel+Protocol.swift */; };
 		358C144A2C67C2B500E63FE2 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */; };
 		3595D97E2C65A2F300D0D6C6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97D2C65A2F300D0D6C6 /* RxCocoa */; };
 		3595D9802C65A2F300D0D6C6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3595D97F2C65A2F300D0D6C6 /* RxSwift */; };
@@ -49,7 +49,7 @@
 		352942662C651321000E6AF4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		352942682C65136F000E6AF4 /* iTunesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesModel.swift; sourceTree = "<group>"; };
 		3529426A2C651390000E6AF4 /* SearchTabMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabMainViewModel.swift; sourceTree = "<group>"; };
-		3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabDetailViewModel.swift; sourceTree = "<group>"; };
+		352D9DEC2C6A540600028F14 /* BaseViewModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewModel+Protocol.swift"; sourceTree = "<group>"; };
 		358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		3595D98A2C66187900D0D6C6 /* secondTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTabVC.swift; sourceTree = "<group>"; };
 		3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTabVC.swift; sourceTree = "<group>"; };
@@ -92,18 +92,19 @@
 		352942442C6511C0000E6AF4 /* AppStoreProject */ = {
 			isa = PBXGroup;
 			children = (
+				352D9DEC2C6A540600028F14 /* BaseViewModel+Protocol.swift */,
 				3529425A2C65124A000E6AF4 /* TabController.swift */,
 				358C14492C67C2B500E63FE2 /* UserDefaultsManager.swift */,
 				352942592C651207000E6AF4 /* SearchTab */,
-				3529424E2C6511C1000E6AF4 /* Assets.xcassets */,
-				352942502C6511C1000E6AF4 /* LaunchScreen.storyboard */,
-				352942472C6511C0000E6AF4 /* SceneDelegate.swift */,
-				352942452C6511C0000E6AF4 /* AppDelegate.swift */,
 				3595D98A2C66187900D0D6C6 /* secondTabVC.swift */,
 				3595D98C2C6618CC00D0D6C6 /* thirdTabVC.swift */,
 				3595D98E2C6618F200D0D6C6 /* fourthTabVC.swift */,
 				3595D9902C66191200D0D6C6 /* fifthTabVC.swift */,
 				352942532C6511C1000E6AF4 /* Info.plist */,
+				352942452C6511C0000E6AF4 /* AppDelegate.swift */,
+				352942472C6511C0000E6AF4 /* SceneDelegate.swift */,
+				352942502C6511C1000E6AF4 /* LaunchScreen.storyboard */,
+				3529424E2C6511C1000E6AF4 /* Assets.xcassets */,
 			);
 			path = AppStoreProject;
 			sourceTree = "<group>";
@@ -118,7 +119,6 @@
 				3529425E2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift */,
 				352942622C6512E9000E6AF4 /* SearchTabMainCollectionViewCell.swift */,
 				352942602C6512AE000E6AF4 /* SearchTabDetailViewController.swift */,
-				3529426C2C65139F000E6AF4 /* SearchTabDetailViewModel.swift */,
 				352942642C651312000E6AF4 /* SearchTabDetailCollectionViewCell.swift */,
 			);
 			path = SearchTab;
@@ -209,13 +209,13 @@
 			files = (
 				3595D98D2C6618CC00D0D6C6 /* thirdTabVC.swift in Sources */,
 				352942692C65136F000E6AF4 /* iTunesModel.swift in Sources */,
+				352D9DED2C6A540600028F14 /* BaseViewModel+Protocol.swift in Sources */,
 				358C144A2C67C2B500E63FE2 /* UserDefaultsManager.swift in Sources */,
 				3529425F2C65129B000E6AF4 /* SearchTabMainTableViewCell.swift in Sources */,
 				352942632C6512E9000E6AF4 /* SearchTabMainCollectionViewCell.swift in Sources */,
 				352942672C651321000E6AF4 /* NetworkManager.swift in Sources */,
 				3529425D2C651288000E6AF4 /* SearchTabMainViewController.swift in Sources */,
 				3529426B2C651390000E6AF4 /* SearchTabMainViewModel.swift in Sources */,
-				3529426D2C65139F000E6AF4 /* SearchTabDetailViewModel.swift in Sources */,
 				3529425B2C65124A000E6AF4 /* TabController.swift in Sources */,
 				3595D98B2C66187900D0D6C6 /* secondTabVC.swift in Sources */,
 				352942462C6511C0000E6AF4 /* AppDelegate.swift in Sources */,
